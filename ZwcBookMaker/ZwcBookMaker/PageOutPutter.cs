@@ -94,7 +94,7 @@ namespace ZwcBookMaker
                 for (int xIndex = 0; xIndex < pageWidth; ++xIndex)
                 {
                     Color pixel = canvas.GetPixel(xIndex, yIndex);
-                    if (pixel.R != 255 || pixel.G != 255 || pixel.B != 255)
+                    if (pixel.R < 220 || pixel.G < 220 || pixel.B < 220)
                     {
                         isWhiteLine = false;
                         break;
